@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Purista Medium';
+  src: url('../fonts/Purista Medium.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Purista Semibold';
+  src: url('../fonts/Purista Semibold.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Purista Light';
+  src: url('../fonts/Purista Light.otf') format('truetype');
+}

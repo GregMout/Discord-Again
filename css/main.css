@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+/* 
+	colors
+	Geel: #fff030
+	Groen: #8dc63f
+
+
+*/
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+/*****************************************************************************/
+html {
+	height:100%;
+	line-height:20px;
+}
+body {
+	color:#333;
+	font-size:15px;
+	font-family:Verdana;
+}
+/* header */
+header .container {
+	width:100%;
+}
+#header {
+	margin-bottom:0px;
+	padding:30px;
+	background-color:#ececec;
+	border:none;
+}
+/* end header */
+/* nav */
+.navbar-brand {
+	display:none;
+}
+.container .navbar-default {
+	background-color:transparent;
+	border:none;
+    padding: 15px;
+    margin-bottom:0;
+    font-family: 'Purista Medium';
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.navbar-default .container-fluid {
+    padding: 0px;
+}
+.navbar-default .navbar-nav > li > a {
+	color:#000;
+}
+.navbar .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #f17f1a;
+}
+	/* toggle mobile */
+	.navbar-header button {
+		float:left;
+		margin-right:0;
+		margin-left:15px;
+	}
+	.navbar-default .navbar-toggle {
+		border-color:black;
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+		background-color:black;
+	}
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+		background-color:#f17f1a;
+	}
+	.navbar-default .navbar-collapse {
+		border-color: transparent;
+	}
+	/* end toggle mobile */
+/* end nav */
+
+/* Mobile Layout: 480px and below. */
+
+@media only screen and (max-width: 480px) {
+
+#header {
+	margin-bottom:0px;
+	padding:10px 30px;
+}
+#bfbotnav ul li {
+	border-top:1px solid #d1d1d1;
+}
+.navbar-nav {
+	background-color:white;
+}
+}
+
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 768px) {
+
+/* nav */
+.navbar .navbar-nav {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+}
+.navbar .navbar-collapse {
+	text-align: center;
+}
+/* end nav */
