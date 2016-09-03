@@ -55,7 +55,11 @@ html {
 body {
 	color:#333;
 	font-size:15px;
-	font-family: 'Futura Light';
+	font-family: 'Roboto Light';
+    height: 100%;
+}
+.wrapper {
+    height: 100%;
 }
 /* header */
 header .container {
@@ -88,7 +92,7 @@ header .container {
 .navbar-default .navbar-nav > li > a {
 	color:#000;
 }
-.navbar .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav > li > a:hover {
     color: #f17f1a;
 }
 	/* toggle mobile */
@@ -111,25 +115,61 @@ header .container {
 	}
 	/* end toggle mobile */
 .navbar-default #social p {
+    font-size: 17px;
     text-transform: none;
     display: inline;
+    
 }
 /* end nav */
 /* content */
-#bfbotopener {
+.main {
 	background-image: url(../images/bf1.jpg);
-	background-position-x: center;
+	background-position: center;
 	background-size: cover;
-	height: 348px;
+	height: 50%;
 	width: 100%;
     padding: 0px;
 }
 #bfbotopener .jumbotron {
-	background: rgba(255,255,255,0.4);
+	background: transparent;
     height: 100%;
     margin-bottom: 0px;
 }
+#bfbotopener .jumbotron a.btn {
+    background-color: #f17f1a;
+    border: 1px solid #f17f1a;
+    font-size: x-large;
+    border-radius: 0px;
+    color: white;
+    padding: 10px 16px;
+    margin-top: 10px;
+}
+#bfbotopener .jumbotron a.btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+}
+#bfbotopener .jumbotron #text {
+    background-color: rgba(255,255,255,0.7);
+    padding: 10px;
+    padding-bottom: 0px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px 2px;
+}
 /* end content */
+.copyright, .copyright p {
+    display: inline-block;
+    text-align: center;
+    padding: 30px 0;
+}
+/* others */
+a:hover {
+    color: #f17f1a;
+    text-decoration: none;
+}
+.glyphicon-ok {
+    color: #f17f1a;
+}
+    
 
 /* Mobile Layout: 480px and below. */
 
@@ -139,11 +179,8 @@ header .container {
         margin-bottom:0px;
         padding:10px 30px;
     }
-    #bfbotnav ul li {
-        border-top:1px solid #d1d1d1;
-    }
-    .navbar-nav {
-        background-color:white;
+    .main {
+        height: auto;
     }
     #bfbotopener {
         height: auto;
