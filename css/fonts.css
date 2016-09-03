@@ -10,3 +10,11 @@
   font-family: 'Purista Light';
   src: url('../fonts/Purista Light.otf') format('truetype');
 }
+@font-face {
+  font-family: 'Futura Light';
+  src: url('../fonts/Futura Light.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Futura Book';
+  src: url('../fonts/Futura Book.otf') format('truetype');
+}

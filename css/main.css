@@ -55,7 +55,7 @@ html {
 body {
 	color:#333;
 	font-size:15px;
-	font-family:Verdana;
+	font-family: 'Futura Light';
 }
 /* header */
 header .container {
@@ -66,6 +66,7 @@ header .container {
 	padding:30px;
 	background-color:#ececec;
 	border:none;
+    border-bottom: 2px solid #f17f1a;
 }
 /* end header */
 /* nav */
@@ -110,21 +111,52 @@ header .container {
 	}
 	/* end toggle mobile */
 /* end nav */
+/* content */
+#bfbotopener {
+	background-image: url(../images/bf1.jpg);
+	background-position-x: center;
+	background-size: cover;
+	height: 348px;
+	width: 100%;
+    padding: 0px;
+}
+#bfbotopener .jumbotron {
+	background: rgba(255,255,255,0.4);
+    height: 100%;
+    margin-bottom: 0px;
+}
+#bfbotopener .block-cms-link.widget {
+    display: inline-block;
+}
+#bfbotopener h1 {
+	margin-bottom: 40px;
+}
+#elboinfo h2,
+#elboinfo p {
+	padding-bottom: 10px;;
+}
+/* end content */
 
 /* Mobile Layout: 480px and below. */
 
 @media only screen and (max-width: 480px) {
 
-#header {
-	margin-bottom:0px;
-	padding:10px 30px;
-}
-#bfbotnav ul li {
-	border-top:1px solid #d1d1d1;
-}
-.navbar-nav {
-	background-color:white;
-}
+    #header {
+        margin-bottom:0px;
+        padding:10px 30px;
+    }
+    #bfbotnav ul li {
+        border-top:1px solid #d1d1d1;
+    }
+    .navbar-nav {
+        background-color:white;
+    }
+    #bfbotopener {
+        height: auto;
+    }
+    #bfbotopener .jumbotron {
+        margin: 0px;
+    }
 }
 
 
@@ -132,13 +164,24 @@ header .container {
 
 @media only screen and (min-width: 768px) {
 
-/* nav */
-.navbar .navbar-nav {
-	display: inline-block;
-	float: none;
-	vertical-align: top;
-}
-.navbar .navbar-collapse {
-	text-align: center;
-}
-/* end nav */
+    /* nav */
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+    /* end nav */
+    /* content */
+    #elbotop {
+        margin-top: 0px;
+    }
+    #bfbotopener h1 {
+        font-size: 55px;
+    }
+    #elboinfo img {
+        height: 250px;
+        margin-right: 15px;
+    }
