@@ -57,6 +57,7 @@ body {
 	font-size:15px;
 	font-family: 'Roboto Light';
     height: 100%;
+    background-color: #ececec;
 }
 .wrapper {
     height: 100%;
@@ -68,7 +69,6 @@ header .container {
 #header {
 	margin-bottom:0px;
 	padding:30px;
-	background-color:#ececec;
 	border:none;
     border-bottom: 2px solid #f17f1a;
 }
@@ -122,7 +122,7 @@ header .container {
 }
 /* end nav */
 /* content */
-.main {
+.home-main {
 	background-image: url(../images/bf1.jpg);
 	background-position: center;
 	background-size: cover;
@@ -155,9 +155,13 @@ header .container {
     padding-bottom: 0px;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px 2px;
 }
+.main.container {
+    margin-bottom: 15px;
+}
 /* end content */
-.copyright, .copyright p {
+.copyright, .copyright {
     display: inline-block;
+    border-top: 2px solid #f17f1a;
     text-align: center;
     padding: 30px 0;
 }
