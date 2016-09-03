@@ -110,6 +110,10 @@ header .container {
 		border-color: transparent;
 	}
 	/* end toggle mobile */
+.navbar-default #social p {
+    text-transform: none;
+    display: inline;
+}
 /* end nav */
 /* content */
 #bfbotopener {
@@ -124,16 +128,6 @@ header .container {
 	background: rgba(255,255,255,0.4);
     height: 100%;
     margin-bottom: 0px;
-}
-#bfbotopener .block-cms-link.widget {
-    display: inline-block;
-}
-#bfbotopener h1 {
-	margin-bottom: 40px;
-}
-#elboinfo h2,
-#elboinfo p {
-	padding-bottom: 10px;;
 }
 /* end content */
 
