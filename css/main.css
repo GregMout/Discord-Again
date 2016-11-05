@@ -59,9 +59,6 @@ body {
     height: 100%;
     background-color: #ececec;
 }
-.wrapper {
-    height: 100%;
-}
 /* header */
 header .container {
 	width:100%;
@@ -126,14 +123,15 @@ header .container {
 	background-image: url(../images/bf1.jpg);
 	background-position: center;
 	background-size: cover;
-	height: 50%;
 	width: 100%;
     padding: 0px;
+    overflow: auto;
 }
 #bfbotopener .jumbotron {
 	background: transparent;
     height: 100%;
     margin-bottom: 0px;
+    overflow: auto;
 }
 #bfbotopener .jumbotron a.btn {
     background-color: #f17f1a;
@@ -159,11 +157,15 @@ header .container {
     margin-bottom: 15px;
 }
 /* end content */
-.copyright, .copyright {
+.copyright {
     display: inline-block;
     border-top: 2px solid #f17f1a;
-    text-align: center;
     padding: 30px 0;
+    width: 100%;
+}
+.copyright p {
+    border: none;
+    text-align: center;
 }
 /* others */
 a:hover {
@@ -194,6 +196,12 @@ a:hover {
     }
 }
 
+@media only screen and (max-width: 991px) {
+    #bfbotopener .jumbotron #text {
+        padding-bottom: 1px;
+        margin-top: 30px;
+    }
+}
 
 /* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
 
